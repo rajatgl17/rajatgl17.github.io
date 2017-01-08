@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Rajat Goel - Portfolio</title>
+	<style media="screen" type="text/css">
+		body{
+			background: black;
+			color:#c7c2c2;
+		}
+		.cursor{
+			opacity: 1;
+			-webkit-animation: cursor 0.8s infinite;
+			-moz-animation: cursor 0.8s infinite;
+			animation: cursor 0.8s infinite;
+		}
+		@keyframes cursor{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-webkit-keyframes cursor{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-moz-keyframes cursor{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+	</style>	
+</head>
+<body>
+	<div id="loading"><div class="cursor">|</div></div>
+	<div id="boot_screen" style="display: none;">
+		<div id="big_text_main">MICROSOFT<span>&reg;</span></div>
+		<div id="small_text_main">
+			Microsoft Windows<br>
+			Version 1.01
+		</div>
+		<div id="footer_text">
+			Copyright (c) Microsoft Corporation, 1985. All Rights Reserved.<br>
+			Microsoft is a registered trademark of Microsoft Corp.
+		</div>
+	</div>
+
+	<div id="main_screen" style="display: none;">
+		<div class="top_nav">
+			<div class="menu_icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			MS-DOS Executive
+			<div class="close_icon">
+				<div class="bar4"></div>
+			</div>
+		</div>
+		<div class="tool_menu">
+			<div class="menu_button">File</div>
+			<div class="menu_button">View</div>
+			<div class="menu_button">Search</div>
+		</div>
+		<div class="main_content">
+			<ul>
+				<li>ABOUT_ME.TXT</li>
+				<li>PORTFOLIO.TXT</li>
+				<a href="https://www.linkedin.com/in/rajatgl17" target="_blank"><li>LINKEDIN.EXE</li></a>
+				<a href="https://www.github.com/rajatgl17" target="_blank"><li>GITHUB.EXE</li></a>
+				<a><li>MAIL.EXE</li></a>
+				<li>ABOUT_THIS_SITE.TXT</li>
+				<li>BLOG.TXT</li>
+			</ul>
+		</div>
+		<div class="main_content" style="display: none;"></div>
+	</div>
+
+	<link rel="stylesheet" type="text/css" href="css/my.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/my.js"></script>
+</body>
+</html>
