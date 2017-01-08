@@ -73,6 +73,7 @@ a {
 }
 .main_content ul{
 	list-style: none;
+	float: left;
 }
 .main_content ul li{
 	display:block;
@@ -115,4 +116,8 @@ a {
     border-right: 4px solid black;
     border-top: 4px solid black;
     margin-top: 9px;
+}
+
+#notepad_p{
+	color: black;
 }
