@@ -1,5 +1,5 @@
 
-var bootTime = 000; //2000
+var bootTime = 2000; //2000
 var text, delay=50, charPosition;
 
 var about="Hey there!~My name is Rajat Goel.~I'm an engineering graduate (batch 2016). ";
