@@ -1,5 +1,5 @@
 
-var bootTime = 2000; //2000
+var bootTime = 1000; //2000
 var text, delay=50, charPosition;
 
 var about="Hey there!~My name is Rajat Goel.~I'm an engineering graduate (batch 2016). ";
@@ -17,6 +17,15 @@ var about_site = "At present this site is not fully completed. I'm trying to mak
 
 var blog = "Coming soon!!!";
 
+var portfolio="------- Web applications -------"+
+"~1. SKITClassTests - Online Assessment Portal"+
+"~2. ApnaTiffin - E-commerce website"+
+"~3. Pravah 2015"+
+"~4. Pravah 2014"+
+"`"+
+"------- Mobile applications -------"+
+"~5. Skitech - Android Application"
+"`Enter project number (between 1 to 5)to know more about it :";
 
 $(window).bind('load',function(){
 	$('#loading').fadeOut().promise().then(function(){
@@ -40,6 +49,10 @@ $(window).bind('load',function(){
 		text = blog;
 		call_type();
 	});
+	$('#portfolio_btn').click(function(){
+		text = portfolio;
+		call_type();
+	});
 
 	$('#back_btn').click(function(){
 		$('#home').show();
@@ -52,6 +65,7 @@ function call_type(){
 	$('#notepad').show();
 	$("#notepad_p").empty();
 	$('#back_btn').hide();
+	$('#main_cursor').show();
 	charPosition=0;
 	type();
 }
