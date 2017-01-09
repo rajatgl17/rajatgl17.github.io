@@ -1,6 +1,13 @@
 
 var bootTime = 000; //2000
-var text, delay, charPosition;
+var text, delay=50, charPosition;
+
+var about="Hey there!~My name is Rajat Goel.~I'm an engineering graduate (batch 2016). ";
+about+="Currently, I'm working as Program Analyst Trainee  at Cognizant Technology Solutions.";
+about+="`I'm looking for a job opportunity (preferably as a Java developer).";
+
+var about_site = "";
+
 
 $(window).bind('load',function(){
 	$('#loading').fadeOut().promise().then(function(){
@@ -13,25 +20,29 @@ $(window).bind('load',function(){
 	});
 
 	$('#about_btn').click(function(){
-		$('#home').hide();
-		$('#notepad').show();
-		$("notepad_p").empty();
-		text="Hey there!~My name is Rajat Goel.~I'm a engineering graduate (batch 2016), ";
-		text+="working as Program Analyst Trainee at Cognizant Technology Solutions.";
-		delay=50;
-		charPosition=0;
-		type();
+		text = about;
+		call_type();
 	});
 });
 
+function call_type(){
+	$('#home').hide();
+	$('#notepad').show();
+	$("notepad_p").empty();
+	charPosition=0;
+	type();
+}
 function type()
 {
 	var addDelay = 0
 	if(text.charAt(charPosition) == '~'){
 		$('#notepad_p').append('<br>');
 		addDelay = 300;
+	} else if(text.charAt(charPosition) == '`'){
+		$('#notepad_p').append('<br><br>');
+		addDelay = 300;
 	} else
-		$('#notepad_p').append(text.charAt(charPosition));
+	$('#notepad_p').append(text.charAt(charPosition));
 	charPosition++;
 	if (charPosition<=text.length)
 	{
