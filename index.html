@@ -15,6 +15,10 @@
 			-moz-animation: cursor 0.8s infinite;
 			animation: cursor 0.8s infinite;
 		}
+		.boot_cursor{
+			margin: 30px;
+			font-size: 2em;
+		}
 		@keyframes cursor{
 			0% { opacity:1; }
 			50% { opacity:0; }
@@ -33,7 +37,7 @@
 	</style>	
 </head>
 <body>
-	<div id="loading"><div class="cursor">|</div></div>
+	<div id="loading"><div class="cursor boot_cursor">|</div></div>
 	<div id="boot_screen" style="display: none;">
 		<div id="big_text_main">MICROSOFT<span>&reg;</span></div>
 		<div id="small_text_main">
@@ -59,9 +63,38 @@
 			</div>
 		</div>
 		<div class="tool_menu">
-			<div class="menu_button">File</div>
-			<div class="menu_button">View</div>
-			<div class="menu_button">Search</div>
+			<div class="menu_button">
+				<div class="menu_button_text m1"> File </div>
+					<ul class="dropdown_menu k1" style="display:none;">
+						<li> Run.. </li>
+						<li> Load.. </li>
+						<li> Copy </li>
+						<li> Get Info.. </li>
+						<li> Delete </li>
+						<li> Exit </li>
+					</ul>
+			</div>
+			<div class="menu_button">
+				<div class="menu_button_text m2"> View </div>
+					<ul class="dropdown_menu k2" style="display:none;">
+						<li> Short </li>
+						<li> Long </li>
+						<li> All </li>
+						<li> Partial </li>
+						<li> Programs </li>
+						<li> By name </li>
+						<li> By size </li>
+						<li> By date </li>
+					</ul>
+			</div>
+			<div class="menu_button">
+				<div class="menu_button_text m3"> Search </div>
+					<ul class="dropdown_menu k3" style="display:none; width:270px;">
+						<li> End session </li>
+						<li> Create directory </li>
+						<li> Change directory </li>
+					</ul>
+			</div>
 		</div>
 		<div class="main_content" id="home">
 			<ul>

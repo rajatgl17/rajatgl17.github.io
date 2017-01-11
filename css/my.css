@@ -58,7 +58,22 @@ a {
 	margin-left: 35px;
 	padding: 0 5px;
 }
-.menu_button:hover{
+.menu_button_text:hover{
+	color: #c7c2c2;
+	background: black;
+}
+.menu_button_text{
+
+}
+.dropdown_menu{
+	list-style: none;
+	border:5px solid black;
+	padding: 0 10px 10px 10px;
+	width: 200px;
+    position: absolute;
+    background: #c7c2c2;
+}
+.dropdown_menu > li:hover{
 	color: #c7c2c2;
 	background: black;
 }
@@ -68,7 +83,7 @@ a {
 	border-top: 5px solid black; 
 	border-bottom: 5px solid black; 
 	font-size: 2em;
-	min-height: 500px;
+	height: 500px;
 	padding:10px 30px;
 }
 .main_content ul{
