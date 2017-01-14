@@ -58,20 +58,39 @@ $(window).bind('load',function(){
 		$('#notepad').hide();
 	});
 
+	$(document).keypress(function(e) {
+		if(e.which == 8) {
+			$('#home').show();
+			$('#notepad').hide();
+		}
+	});
+
+
 	$('.m1').click(function(){
 		$('.k1').toggle();
 		$('.k2').hide();
 		$('.k3').hide();
+		$('#catch_click').show();
 	});
 	$('.m2').click(function(){
 		$('.k2').toggle();
 		$('.k1').hide();
 		$('.k3').hide();
+		$('#catch_click').show();
+		$('#catch_click').show();
 	});
 	$('.m3').click(function(){
 		$('.k3').toggle();
 		$('.k2').hide();
 		$('.k1').hide();
+		$('#catch_click').show();
+	});
+
+	$('#catch_click').click(function(){
+		$('.k2').hide();
+		$('.k1').hide();
+		$('.k3').hide();
+		$('#catch_click').hide();
 	});
 
 
