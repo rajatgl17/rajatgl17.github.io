@@ -59,10 +59,11 @@ $(window).bind('load',function(){
 	});
 
 	$(document).keypress(function(e) {
-		if(e.which == 8) {
+		if(e.which == 8 || e.which == 13) {
 			$('#home').show();
 			$('#notepad').hide();
 		}
+		
 	});
 
 
