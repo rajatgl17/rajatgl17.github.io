@@ -1,12 +1,14 @@
 
 var bootTime = 000; //2000
-var text, delay=30, charPosition;
+var text, delay=25, charPosition;
 
-var about="Hey there!~My name is Rajat Goel.~I'm an engineering graduate (batch 2016). ";
-about+="Currently, I'm working as Program Analyst Trainee  at Cognizant Technology Solutions.";
+var about="Hey! My name is Rajat Goel, an engineering graduate";
+about+="Currently, I'm working as Program Analyst Trainee (Mainframe)  at Cognizant Technology Solutions.";
 about+="`I'm looking for a job opportunity (preferably as a Java developer).";
 
-var about_site = "At present this site is not fully completed. I'm trying to make this website's"+
+var about_site = "I started developing this portfolio website under Freecodecamp's - "+
+"'Build a Personal Portfolio Webpage' challenege."+
+"`At present this site is not fully completed. I'm trying to make this website's"+
 " UI similar to Microsoft Windows 1.0 (first GUI OS by Microsoft "+
 "released in 1985).`"+
 "For reference I'm using online windows 1.0 emulator "+
@@ -102,7 +104,6 @@ function call_type(){
 	$('#notepad').show();
 	$("#notepad_p").empty();
 	$('#back_btn').hide();
-	$('#main_cursor').show();
 	charPosition=0;
 	type();
 }

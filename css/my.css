@@ -84,8 +84,9 @@ a {
 	border-top: 5px solid black; 
 	border-bottom: 5px solid black; 
 	font-size: 2em;
-	height: 500px;
+	height: 525px;
 	padding:10px 30px;
+	width: -moz-available;
 }
 .main_content ul{
 	list-style: none;
@@ -136,6 +137,8 @@ a {
 
 #notepad{
 	color: black;
+	overflow-y: scroll;
+	//width: 95%;
 }
 
 #catch_click{
