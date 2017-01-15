@@ -42,6 +42,7 @@ var help="~Commands :"+
 "^HELP            -- help information"+
 "^DESC <number>   -- eg. DESC 3 for description of pravah 2015"+
 "^LAUNCH <number>"+
+"^CLEAR"
 "^EXIT"+
 "`";
 
@@ -253,6 +254,7 @@ function execute_command(command){
 		case 'launch 3': window.open(url3, '_blank'); text='~'; break;
 		case 'launch 4': window.open(url4, '_blank'); text='~'; break;
 		case 'launch 5': window.open(url5, '_blank'); text='~'; break;
+		case 'clear': $('#cmd_output').empty(); text='~'; break;
 		case 'exit': $('#home').show();	$('#cmd').hide(); flag=0; break;
 		default: text = '~ \''+command+'\' is not recogized as a internal or external command.`'; break;
 	}
