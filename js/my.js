@@ -42,7 +42,7 @@ var help="~Commands :"+
 "^HELP            -- help information"+
 "^DESC <number>   -- eg. DESC 3 for description of pravah 2015"+
 "^LAUNCH <number>"+
-"^CLEAR"
+"^CLEAR"+
 "^EXIT"+
 "`";
 
