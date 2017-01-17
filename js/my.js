@@ -130,6 +130,7 @@ $(window).bind('load',function(){
 	$(document).keypress(function(e) {
 		if(flag==0){
 			if(e.which == 8 || e.which == 13) {
+				e.preventDefault();
 				$('#home').show();
 				$('#notepad').hide();
 			}
@@ -226,10 +227,14 @@ function cmd_activate(command){
 
 function cmd_input(e){
 	if(flag==2){
-		if(e.which == 8 || e.which == 13) {
+		if(e.which == 13) {
 			var command = $('#cmd_input').text();
 			$('#cmd_input').empty();
 			execute_command(command);
+		} else if(e.which == 8){
+			e.preventDefault();
+			var temp = $('#cmd_input').text();
+			$('#cmd_input').text(temp.substring(0,temp.length-1));
 		} else {
 			$('#cmd_input').append(String.fromCharCode(e.which));
 		}
