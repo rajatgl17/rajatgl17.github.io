@@ -227,11 +227,11 @@ function cmd_activate(command){
 
 function cmd_input(e){
 	if(flag==2){
-		if(e.which == 13) {
+		if(e.which == 13) {                                           //enter
 			var command = $('#cmd_input').text();
 			$('#cmd_input').empty();
 			execute_command(command);
-		} else if(e.which == 8){
+		} else if(e.which == 8){                                      //backspace
 			e.preventDefault();
 			var temp = $('#cmd_input').text();
 			$('#cmd_input').text(temp.substring(0,temp.length-1));
