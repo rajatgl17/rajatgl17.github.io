@@ -9,9 +9,9 @@ var url3 = "http://rajatgoel.in/work/pravah2015/";
 var url4 = "http://rajatgoel.in/work/pravah2014/";
 var url5 = "https://play.google.com/store/apps/details?id=in.ac.skit.skitech&hl=en";
 
-var about="Hey! My name is Rajat Goel.";
-about+="~Currently, I'm working as Program Analyst Trainee (Mainframe)  at Cognizant Technology Solutions.";
-about+="`I'm looking for a job opportunity (preferably as a Java developer).";
+var about="Hey! My name is Rajat Goel."+
+"~Currently, I'm working as Program Analyst Trainee (Mainframe)  at Cognizant Technology Solutions, Chennai."+
+"`I'm looking for a job opportunity (preferably as a Java developer).";
 
 var contact = 'E-mail : rajatgl17[at]gmail[dot]com';
 
