@@ -6,22 +6,22 @@
 	<link rel="shortcut icon" href="../images/github.ico" type="image/x-icon">
 	<title>Github Insights</title>
 	<link rel="stylesheet" type="text/css" href="../css/github-insights.css" media="screen" />
+	<link rel="stylesheet" src="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.0.0/dygraph.min.css" />
 </head>
 <body>
 
 	<div id="main_div">
 		<div id="header">
 			<h1>Github Insights</h1>
-			<p>Last updated on XX-XX-XXXX</p>
+			<p>Last updated on <span id ="lastUpdateOn">-- --- ----</span></p>
 		</div>
 		<div class="chart">
-			<canvas class="chart" id="repoCount"></canvas>
+			<div id="repoCount"></div>
 		</div>
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.0.0/dygraph.min.js"></script>
 	<script src="../js/github-insights.js"></script>	
 </body>
 </html>
