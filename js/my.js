@@ -1,5 +1,5 @@
 
-var bootTime = 000; //2000
+var bootTime = 2000; //2000
 var text, delay, charPosition, $typeAt;
 var flag=0;
 
