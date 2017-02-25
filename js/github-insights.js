@@ -1,13 +1,20 @@
 var url = "http://localhost:8080/github-insights/";
 var programmingLanguages;
 var repoCountChart;
-var repoCountData;
 
 $( document ).ready(function(){
 	changeOnUpdateDate();
 	getProgrammingLanguages();
 	updateRepoCounts();
-	
+
+	repoCountChart = new Dygraph(
+		document.getElementById("repoCount"),
+		"date,count\n",
+		{
+			showRangeSelector: true,
+			title: "Number of repositories created on a day"
+		});
+
 });
 
 function changeOnUpdateDate(){
@@ -18,7 +25,7 @@ function getProgrammingLanguages(){
 	$.ajax({
 		url: url+"ProgrammingLanguagesList",
 		success: function(data){
-
+			
 		},
 		error: function(){
 			displaySnack("There is some error in loading data. Please reload page.")
@@ -31,16 +38,7 @@ function updateRepoCounts(){
 	$.ajax({
 		url: url+"GetRepoCount",
 		success: function(data){
-			repoCountChart = new Dygraph(
-				document.getElementById("repoCount"),
-				data,
-				{
-					customBars: true,
-					title: 'Repositories Count',
-					ylabel: 'Count',
-					legend: 'always',
-					showRangeSelector: true
-				});
+			repoCountChart.updateOptions({'file':data});
 		},
 		error: function(){
 			displaySnack("There is some error in loading data.")
