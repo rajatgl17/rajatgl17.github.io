@@ -15,9 +15,24 @@
 			<h1>Github Insights</h1>
 			<p>Last updated on <span id ="lastUpdateOn">-- --- ----</span></p>
 		</div>
+
 		<div class="chartDiv">
+			<div class="form"> 
+				<select class="select" id="way">
+					<option value="relative">Relative</option>
+					<option value="absolute">Absolute</option>
+				</select>
+				<select class="select" id="lang1">
+				</select>
+				<select class="select" id="lang2">
+				</select>
+				<button class="updateButton" onclick="updateRepoCounts()">
+					Update Graph
+				</button>
+			</div>
 			<div id="repoCount" class="chart"></div>
 		</div>
+
 	</div>
 	<div id="snackbar"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
