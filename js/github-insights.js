@@ -1,4 +1,5 @@
-var url = "http://35.160.105.253:8080/github-insights/";
+var proxy = 'https://cors-anywhere.herokuapp.com/';
+var url = proxy+"http://35.160.105.253:8080/github-insights/";
 //var url = "http://localhost:8080/github-insights/";
 var programmingLanguages;
 var repoCountChart;
@@ -53,10 +54,10 @@ function updateRepoCounts(){
 		url: url+"GetRepoCount?lang1="+lang1+"&lang2="+lang2+"&way="+way,
 		success: function(data){
 			var data = "Date,"
-				+$("#lang1 option:selected").text()
-				+","
-				+$("#lang2 option:selected").text()
-				+"\n"+data;
+			+$("#lang1 option:selected").text()
+			+","
+			+$("#lang2 option:selected").text()
+			+"\n"+data;
 			repoCountChart.updateOptions({'file':data});
 		},
 		error: function(){
