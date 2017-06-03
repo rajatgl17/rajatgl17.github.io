@@ -1,8 +1,8 @@
 var proxy = 'https://cors-anywhere.herokuapp.com/';
-var url = proxy+"http://35.160.105.253:8080/github-insights/";
-//var url = "http://localhost:8080/github-insights/";
+//var url = proxy+"http://35.160.105.253:8080/github-insights/";
+var url = "http://localhost:8080/github-insights/";
 var programmingLanguages;
-var repoCountChart;
+var repoCountChart, userCountChart;
 
 $( document ).ready(function(){
 
@@ -16,6 +16,14 @@ $( document ).ready(function(){
 			showRangeSelector: true,
 			title: "Number of repositories created on a day"
 		});
+	
+	userCountChart = new Dygraph(
+			document.getElementById("userCount"),
+			"date,count,count\n",
+			{
+				showRangeSelector: true,
+				title: "Number of users created on a day"
+			});
 
 });
 
@@ -38,6 +46,7 @@ function getProgrammingLanguages(){
 			$('#lang1 option:eq(0)').prop('selected', true)
 			$('#lang2 option:eq(1)').prop('selected', true)
 			updateRepoCounts();
+			updateUserCounts();
 		},
 		error: function(){
 			displaySnack("There is some error in loading list of programming languages.")
@@ -66,9 +75,34 @@ function updateRepoCounts(){
 	});
 }
 
+function updateUserCounts(){
+	var lang1 = $('#lang1').val();
+	var lang2 = $('#lang2').val();
+	var way = $('#way').val();
+	$.ajax({
+		url: url+"GetUserCount?lang1="+lang1+"&lang2="+lang2+"&way="+way,
+		success: function(data){
+			var data = "Date,"
+			+$("#lang1 option:selected").text()
+			+","
+			+$("#lang2 option:selected").text()
+			+"\n"+data;
+			userCountChart.updateOptions({'file':data});
+		},
+		error: function(){
+			displaySnack("There is some error in loading repositories count data.")
+		}
+	});
+}
+
 function displaySnack(msg) {
 	var x = document.getElementById("snackbar");
 	x.innerHTML = msg;
 	x.className = "show";
 	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+}
+
+function updateGraphs(){
+	updateRepoCounts();
+	updateUserCounts();
 }
