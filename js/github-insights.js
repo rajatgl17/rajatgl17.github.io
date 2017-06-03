@@ -1,6 +1,6 @@
 var proxy = 'https://cors-anywhere.herokuapp.com/';
-//var url = proxy+"http://35.160.105.253:8080/github-insights/";
-var url = "http://localhost:8080/github-insights/";
+var url = proxy+"http://35.160.105.253:8080/github-insights/";
+//var url = "http://localhost:8080/github-insights/";
 var programmingLanguages;
 var repoCountChart, userCountChart;
 
