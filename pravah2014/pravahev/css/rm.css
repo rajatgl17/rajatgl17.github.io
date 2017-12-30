@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+body{
+	background-image:url(../i/pics/bg.jpg) ;
+	background-attachment:fixed;
+	background-size:cover;
+	overflow-Y: scroll;
+	overflow-X: auto;
+}
+
+#choices{
+	position:absolute;
+	top: 28%;
+	left: 5%;
+	color: white;
+	text-align: center;
+	font-size:24px;
+}
+
+.menus{
+	height: 50px;
+	width: 150px;
+	padding: 10px;
+	background: rgba(30, 30, 30, 0.7);
+	margin: 30px;
+	cursor: pointer;
+	border-top-right-radius: 35%;
+	border-bottom-left-radius: 35%;
+}
+
+.menus:hover{
+	
+	-webkit-transition: all 500ms ;
+    -moz-transition: all 500ms ;
+    -ms-transition: all 500ms ;
+    -o-transition: all 500mss ;
+    transition: all 500ms ;
+	
+	background: #000;
+	
+	
+}
+
+#roboImage1{
+	position: relative;
+	height: 500px;
+	left: 31%;
+}
+
+#shineUp{
+	
+    background: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    background: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+	
+	display:block;
+	position: absolute;
+	width: 700px;
+	height: 40px;
+	left: 0;
+	top: 0;
+	padding: 0 60px;
+	z-index: 3;
+}
+
+#shineDown{
+	
+    background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: -o-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: -ms-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+    background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+	
+	display:block;
+	position: relative;
+	width: 700px;
+	height: 40px;
+	left: -60px;
+	top: 30px;
+	padding: 0 60px;
+	z-index: 3;
+}
+
+
+
+div.inside{
+	z-index: 4;
+}
+
+div.robowarPage{
+	display: none;
+	position:absolute;
+	text-align:center;
+	min-width: 300px;
+	width: 700px;
+	left: 25%;
+	background: rgba(30, 30, 30, 0.6);
+	top: 20%;
+	padding: 30px 60px;
+	font-size: 22px;
+	color: rgb(230,230,230);
+}
+
+span.topic{
+	font-weight:bolder;
+	color: #F0FFFF;
+	font-size: 22px;
+	
+}
+
+h1,h2,h3{
+	color: #5B0000;
+}
+
+h2, h3{
+	text-shadow: -2px -2px 4px #fff, 2px 2px 4px #fff;
+}
+
+table, td, th{
+	border:3px ridge black;
+	border-collapse:collapse;
+	background-color:#FFF;
+	font-size: 18px;
+	color: black;
+}
+
+.studentDetails{
+	position: relative;
+	border: none;
+	left: 25%;
+	padding: 10px;
+	background-color: rgba(2,2,2,0);
+	color: white;
+}
+
+th.studentDetails{
+	color: #5B0000;
+}
+
+th{
+	text-align: center;	
+	font-size: 22px;
+	text-shadow: -2px -2px 4px #fff, 2px 2px 4px #fff;
+}
+
+span.topic2{
+	font-weight:bolder;
+	color: #5B0000;
+	font-size: 20px;
+	text-shadow: -2px -2px 4px #fff, 2px 2px 4px #fff;	
+}
+
+td, li, p{
+	text-align:start;
+}
+
+#coordinators{
+	top: 33%;
+}
+
+div#head{
+	text-align:center;
+}
+
+.arrow_left{
+	position: relative;
+width: 0;
+height: 0;
+border-top: 23px solid transparent;
+border-bottom: 22.9px solid transparent;
+border-right: 165px solid rgba(30, 30, 30, 0.8);
+left: -165px;
+top: 0;
+}
+
+#registration{
+	padding: 0;
+	margin: 0;
+	top: 355px;
+	left: 164%;
+	width: 345px;
+	height: 45px;
+	z-index: 10;
+	background: rgba(30, 30, 30, 0.8);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+}
+
+
+#registration div,p{
+	margin:0;
+}
+
+
+#registration  div.inside{
+	position: relative;
+	width: inherit;
+	height: 45px;
+	top: -45px;
+}
+
+#registration p{
+	position: relative;
+	top: 7px;
+	padding-left: 20%;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+a:hover{
+	color: #0FF;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRAVAH 2015 | SKIT </title> 
+	
+	<meta name="keywords" content="pravah, techfest, skit, jaipur, sports, cultural, technical, non-technical">
+	<meta name="description" content="PRAVAH , the annual inter-collegiate, technocultural  & sports fest signifies the rich tradition of our institute in promoting and fostering innovative and creative sparks that the SKIT family has nurtured for over a decade.">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="css/menu.css" type="text/css" />
+	<link rel="stylesheet" href="css/navigation.css" type="text/css" />
+	<!-- Scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/snap.svg-min.js"></script>
+	<script type="text/javascript" src="js/greensock/plugins/RaphaelPlugin.min.js"></script>
+	<script type="text/javascript" src="js/greensock/utils/Draggable.min.js"></script>
+	<script type="text/javascript" src="js/greensock/easing/EasePack.min.js"></script>
+	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	<script> var leftTime= 1424629800000 - <?php date_default_timezone_set('GMT'); echo time(); ?>000; </script>
+</head>
+<body>
+	<div id="main-page1">
+		<div id="menu">
+			<!-- here my menu svg must go 
+			<object data="svg/menu_plain.svg" type="image/svg+xml"></object>-->
+		</div>
+		<div id="pravah">
+			<div>	
+				<div id="skit_presents">Swami Keshvanand Institute of Technology<br>Management & Gramothan, Jaipur<br>presents</div>
+				<div id="text">
+					<h1></h1>
+					<hr/>
+					<div id="logo-meta-1"><span> 23rd - 28th February 2015 </span></div>
+				</div>
+				<div id="svg">
+					<img src="svg/logo.svg" style="height:100%;">
+					
+				</div>
+			</div>
+		</div>
+		<div id="updates">
+			<img id='update-image' class='update-seen'></img>
+			<div id='update-content' class='update-seen'></div>
+			<div id='update-animate'></div>
+		</div>
+		<div id="sponsors">
+			<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			   xmlns:svg="http://www.w3.org/2000/svg"  xmlns="http://www.w3.org/2000/svg"  xmlns:xlink='http://www.w3.org/1999/xlink'  version="1.1"
+			   width="100%" height="100%" viewbox="0 0 546.4 281" id="svgSponsors">
+			</svg>
+			<div id="inner-sponsors"> </div>
+		</div>
+		<div id="shield">
+			<div><div class='shields' id="shield1"></div></div>
+			<div><div class='shields' id="shield2"></div></div>
+		</div>
+		<!--div id="timer">
+		</div-->
+	</div>
+
+	<div id="menu-nav">
+		<div id="nav-screen">
+			<div id="nav">
+				<div id="nav-screen-content">
+					<div id="content1"><div id="go_back_icon">Back</div><div id="eventTitle"></div></div>
+					<div id="scrollPane">
+				       		<div id="scrollMe"></div>
+				    	</div>
+					<div id="content2" class="content_box about"></div>
+
+					<div id="content2" class="content_box accommodation"></div>
+
+					<div id="content2" class="content_box contact">
+						<div id="contacts"></div>
+					</div>
+
+					<div id="content2" class="content_box competitions">
+					</div>
+
+					<div id="content2" class="content_box exhibitions"><div id="exhibition_content" style="padding:20px;"></div></div>
+					<div style="display:none;"><a href="http://www.rajatgoel.in">Rajat Goel rajatgl17</a></div>
+					<div id="content2" class="content_box workshops"><div id="workshop_content" style="padding:20px;"></div></div>
+					<div id="content2" class="content_box initiatives"><div id="initiative_content" style="padding:20px;"></div></div>
+
+					<div id="content2" class="content_box sponsors">
+						<div id="sponsors"></div>
+					</div>
+				</div>
+			</div>
+			<div id="pointers">
+				<div id='Detail' class='options'>Details</div>
+				<div id='Rules' class='options'>Rules</div>
+				<div id='Contact' class='options'>Contacts</div>
+				<div id='Register' class='options'>Register</div>
+			</div>
+		</div>
+		<div id="event-page">
+		</div>
+		<div id="event-subtitles" style="">
+		</div>
+		<div id="menu-nav-svg-container">
+		<script src="js/menu_nav.js"></script>
+		</div>
+	
+	
+	<script>
+		window.onload = function(){
+			var menuNav = new MenuNav();
+			var menu = new Menu();
+			var homepage = new Homepage();
+			var timer = new TimerTween();
+			var contents = new ContentObjects();
+			var events = new Events();
+			var navTab = new NavContent();
+			var animator = new Animator();
+			var scrollbar = new Scrollbar();
+			var sponsors = new Sponsors();
+			var notify = new Notify();
+			notify.init(contents);
+			$("#main-page1 > div").not('#pravah,#shield').css({
+			    opacity:0
+			  });
+			  timer.init();
+			sponsors.init(animator);
+			animator.init(events, menuNav, homepage, timer, menu, navTab, scrollbar, sponsors, notify);
+			events.init(contents,animator);
+			contents.init();
+			navTab.init(animator);
+			menuNav.init(menu, contents, animator);
+			
+			homepage.init();
+			menu.init(animator);
+			animator.animateStart()
+			scrollbar.init();
+		}
+	</script>
+	<script src="js/notifications.js"> </script>
+	<script src="js/homepage.js"> </script>
+	<script src="js/nav_content.js"></script>
+	<script src="js/menu_new.js"> </script>
+	<script src="js/sponsors.js"> </script>
+	<script src="js/timerTween.js"> </script>
+	<script src="js/contentObjects.js"> </script>
+	<script src="js/events_new.js"> </script>
+	<script src="js/Animator.js"> </script>
+	<script src="js/scrollbar.js"> </script>
+</body>
+</html>

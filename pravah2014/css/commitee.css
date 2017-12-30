@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#commitee{
+	//display:block;
+	position:absolute;
+	color:#000;
+	z-index: 20000;
+	display: none;
+	min-width: 900px;
+	width: 900px;
+	left: 15%;
+	top: 280px;
+}
+
+
+#aboutUs{
+	display: none;
+	position: absolute;
+	min-width: 900px;
+	width: 900px;
+	background:#FFF;
+	box-shadow: 0 0 30px 15px #000;
+	padding-top: 20px;
+	padding-bottom: 43px;
+	z-index: 13;
+	text-align: center;
+}
+
+#aboutUs{
+	//display: block;
+}
+
+h1#aboutUsHead{
+	font-size:48px;
+	color:#A71601;
+	text-shadow: 3px 3px 5px #000;
+}
+
+#aboutUs > p{
+	padding: 20px;
+	font-size:25px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align:center;
+	text-indent:50px;
+}
+
+.aboutPravah{
+	color:#F03;
+	font-weight:bold;
+}
+
+p.aboutUs:first-letter{
+	color: #F03;
+	font-weight:900;
+	font-size:40px;
+	text-shadow: 0 0 5px #333;
+}

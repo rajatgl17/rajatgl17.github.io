@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink='http://www.w3.org/1999/xlink'
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewbox="0 0 925 725.45"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg2">
+
+   <defs>
+      <filter id="f2" x="-20%" y="-20%" width="200%" height="200%">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+      </filter>
+      <filter id="f1" x="-5%" y="-5%" width="120%" height="120%">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+      </filter>
+    </defs>
+<g id='timers'>
+<g id='days' style="fill:#000000;fill-opacity:0;stroke:#ffffff;">
+   <circle cx="200" cy="200" r="187" class="c1"
+          style="stroke-width:30;stroke-opacity:0.56084655;stroke-dasharray:187.47785, 987.47785;stroke-dashoffset:200.50435" />
+   <circle cx="200" cy="200" r="162" class="c2"
+          style="stroke-width:12;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.73;stroke-dasharray:708.938, 308.938;stroke-dashoffset:-250" />
+   <circle cx="200" cy="200" r="148" class="c3"
+          style="stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.46084655;stroke-dasharray:564.9557, 364.9557;stroke-dashoffset:-400" />
+
+   <circle cx="200" cy="200" r="104" class="c4" filter="url(#f2)"
+          style="stroke-width:40;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.96084655;stroke-dasharray:163.362825, 490.088475;stroke-dashoffset:326.72565" />
+   <circle cx="200" cy="200" r="91" class="c4" filter="url(#f2)"
+          style="stroke-width:26;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.96084655;stroke-dasharray:105.88495, 465.88495;stroke-dashoffset:-85" />
+
+    <text id='time' x="145" y="188" filter="url(#f2)" style="font-weight: bold;font-family:'bitwise';font-size:60px;fill:#04adbd;fill-opacity:1;stroke:none;"></text>
+    <text id='timeData' x="177" y="233" filter="url(#f1)" style="font-weight: bold;letter-spacing:6px;font-family:'bitwise';font-size:50px;fill:#04adbd;fill-opacity:1;stroke:none;"></text> 
+</g>
+</g>
+</svg>

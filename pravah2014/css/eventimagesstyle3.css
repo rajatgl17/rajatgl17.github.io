@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+#blacky{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.9);
+	z-index: 2000;
+	
+}
+
+#details{
+	position:absolute;	
+}
+
+#details p{
+	position: relative;
+	left: -250px;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	font-size: 48px;
+	color: #fff;	
+}
+
+.openMe{
+	height:100%;
+	width: 100%;
+	z-index: 200;
+
+	overflow: visible;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-backface-visibility: hidden;
+           -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+             -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+}
+
+#myWrapper1{
+	background:rgba(255,255,255,0);
+	position:fixed;	
+	width: 100%;
+	height:100%;
+	z-index: 2001;
+}
+#myWrapper2{
+	display:none;
+	opacity: 0;
+}
+
+#closeBlacky{
+	position:relative;
+	margin: 0;
+	top: 5px;
+	left: 93%;
+	cursor: pointer;
+}
+
+#prevImage{
+	position:absolute;
+	margin: 0;
+	top: 40%;
+	left: 6%;
+	cursor: pointer;
+}
+
+#nxtImage{
+	position:absolute;
+	margin: 0;
+	top: 40%;
+	left: 85%;
+	cursor: pointer;
+}
+@keyframes scaleU{
+	from{
+		transform: scale(0.01);
+		-webkit-transform: scale(0.01);
+		-moz-transform: scale(0.01);
+		-ms-transform: scale(0.01);
+	}
+	
+	to{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes scaleU{
+	from{
+		transform: scale(0.01);
+		-webkit-transform: scale(0.01);
+	}
+	
+	to{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+#showImage1{
+	top: 3%;
+	left: 17%;
+	position: absolute;
+}
+
+.showImage1{
+	animation-duration: 1s;
+  	animation-name: scaleU;
+	-webkit-animation-duration: 1s;
+  	-webkit-animation-name: scaleU;
+	-moz-animation-duration: 1s;
+  	-moz-animation-name: scaleU;
+	-ms-animation-duration: 1s;
+  	-ms-animation-name: scaleU;
+}
+
+#showImage{
+	margin:auto;
+}
+
+#showImage.loader{
+	background: url(../images/loader.GIF) no-repeat center center;
+	height: 28px;
+	width: 128px;
+	position: relative;
+	top: 30%;
+}
+
+.view .newSlice{
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	-moz-transition: -moz-transform 1s ease-in-out;
+	-o-transition: -o-transform 1s ease-in-out;
+	-ms-transition: -ms-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+}
+
+.myS1{
+	-webkit-transition-delay: 250ms;
+	-moz-transition-delay: 250ms;
+	-o-transition-delay: 250ms;
+	-ms-transition-delay: 250ms;
+	transition-delay: 250ms;
+	
+	-webkit-transform: rotate3d(0,1,0,-70deg);
+	-moz-transform: rotate3d(0,1,0,-70deg);
+	-o-transform: rotate3d(0,1,0,-70deg);
+	-ms-transform: rotate3d(0,1,0,-70deg);
+	transform: rotate3d(0,1,0,-70deg);
+}
+.myS2{
+	-webkit-transition-delay: 150ms;
+	-moz-transition-delay: 150ms;
+	-o-transition-delay: 150ms;
+	-ms-transition-delay: 150ms;
+	transition-delay: 150ms;
+	
+	-webkit-transform: translate3d(59px,0,0) rotate3d(0,1,0,-45deg);
+	-moz-transform: translate3d(59px,0,0) rotate3d(0,1,0,-45deg);
+	-o-transform: translate3d(59px,0,0) rotate3d(0,1,0,-45deg);
+	-ms-transform: translate3d(59px,0,0) rotate3d(0,1,0,-45deg);
+	transform: translate3d(59px,0,0) rotate3d(0,1,0,-45deg);
+}
+.myS3{
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	-o-transition-delay: 100ms;
+	-ms-transition-delay: 100ms;
+	transition-delay: 100ms;
+	
+	-webkit-transform: translate3d(59px,0,0) rotate3d(0,1,0,-36deg);
+	-moz-transform: translate3d(59px,0,0) rotate3d(0,1,0,-36deg);
+	-o-transform: translate3d(59px,0,0) rotate3d(0,1,0,-36deg);
+	-ms-transform: translate3d(59px,0,0) rotate3d(0,1,0,-36deg);
+	transform: translate3d(59px,0,0) rotate3d(0,1,0,-36deg);
+}
+.myS4{
+	-webkit-transition-delay: 50ms;
+	-moz-transition-delay: 50ms;
+	-o-transition-delay: 50ms;
+	-ms-transition-delay: 50ms;
+	transition-delay: 50ms;
+	
+	-webkit-transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
+	-moz-transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
+	-o-transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
+	-ms-transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
+	transform: translate3d(59px,0,0) rotate3d(0,1,0,-30deg);
+}
+.myS5{
+	-webkit-transform: translate3d(60px,0,0) rotate3d(0,1,0,-20deg);
+	-moz-transform: translate3d(60px,0,0) rotate3d(0,1,0,-20deg);
+	-o-transform: translate3d(60px,0,0) rotate3d(0,1,0,-20deg);
+	-ms-transform: translate3d(60px,0,0) rotate3d(0,1,0,-20deg);
+	transform: translate3d(60px,0,0) rotate3d(0,1,0,-20deg);
+}
+
+.view .myS1 {
+	background-position: 0px 0px;
+}
+.view .myS2 {
+	background-position: -60px 0px;
+}
+.view .myS3 {
+	background-position: -120px 0px;
+}
+.view .myS4 {
+	background-position: -180px 0px;
+}
+.view .myS5 {
+	background-position: -240px 0px;
+}
+
+.view .myS2 > .overlay {
+	background: -moz-linear-gradient(right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+	background: -webkit-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+	background: -o-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+	background: -ms-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+	background: linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+}
+
+.view .myS4 > .overlay {
+	background: -moz-linear-gradient(right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(right, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+}
+
+.view .myS5 > .overlay {
+	background: -moz-linear-gradient(right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+	background: -webkit-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+	background: -o-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+	background: -ms-linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+	background: linear-gradient(right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+}
+
+a{
+	cursor:pointer;
+}

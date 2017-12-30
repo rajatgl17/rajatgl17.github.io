@@ -1,0 +1,120 @@
+@charset "utf-8";
+#logo{
+	position: relative;
+	height: 160px;
+	width: inherit;
+	
+	z-index:5;
+}
+
+#pravahLogo{
+	display: block;
+	cursor:pointer;
+	height: 150px;
+	width:200px;
+	background-position: center;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	//border: 2px solid red;
+	z-index:10;
+}
+
+#PravahText{
+	position:relative;
+	top: 0px;	
+}
+
+.text{
+	background-position:center;
+	background-size:cover;
+	height: 29px;
+	width: 75px;
+}
+
+#textred{
+	position:relative;
+	background-image:url(../splashes/home.png);
+	top: 83px;
+}
+
+#textblue{
+	position:relative;
+	background-image:url(../splashes/EVENTS.png);
+	top: 83px;
+}
+
+#textgreen{
+	position:relative;
+	background-image:url(../splashes/AboutUs.png);
+	top: 83px;
+}
+
+#textyellow{
+	position:relative;
+	background-image:url(../splashes/CONTACTUS.png);
+	top: 83px;
+}
+
+.fronttags{
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+	 top: 0px;
+	 //left: 49.41px;
+	 display: none;
+	 left: 500px;
+	 background-position:center;
+	background-size:cover;
+	 opacity: 0;
+}
+
+#frontred{
+	position: absolute;
+	//display: none;
+}
+
+.frontred{
+	background-image:url(../splashes/merooninside.png);
+}
+
+#frontblue{
+	position: absolute;
+	//background: #00F;
+}
+.frontblue{
+	background-image:url(../splashes/inside.png);
+}
+#frontgreen{
+	position:absolute;
+	//background:#0F0;
+}
+.frontgreen{
+	background-image:url(../splashes/greeninside.png);
+}
+#frontyellow{
+	position:absolute;
+	//background:#FF0;
+}
+.frontyellow{
+	background-image:url(../splashes/redinside.png);
+}
+
+.yellow
+{
+	background-image:url(../splashes/redcover.png);
+}
+
+.green
+{
+	background-image:url(../splashes/greencover.png);
+}
+
+.blue
+{
+	background-image:url(../splashes/blueCover.png);
+}
+
+.red
+{
+	background-image:url(../splashes/meroonoutside.png);
+}

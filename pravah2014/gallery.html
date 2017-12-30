@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="demo1 no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pravah Moments</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/eventimagesstyle1.css">
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="css/eventimagesstyle2.css">
+<link rel="stylesheet" type="text/css" href="css/eventimagesstyle3.css">
+<script type="text/javascript" src="js/changedJqueryToModernizr.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/eventimagesscript2.js"></script>
+<script type="text/javascript" src="js/snowfall.js"></script>
+<style>
+body, html {
+      margin: 0;
+	  padding: 0;
+      -webkit-font-smoothing: antialiased;
+      background:#222;
+	  background-attachment:fixed;
+	  background-size:cover;
+	  background-repeat:no-repeat;
+	  overflow:hidden;
+}
+
+canvas, .page_container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 0;
+}
+
+.main1{
+	position:absolute;
+	 width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+	z-index: 10;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="page_container">
+      <canvas width="100%" height="100%" class="snow"></canvas>
+    </div>
+	<div class="main1">
+		<div id="myWrapper2">
+        
+        	<div id="blacky">
+            	
+     		</div>
+            
+  			<div id="myWrapper1">
+            	<img id="closeBlacky" src="images/CROSS.png" />
+                <img id="prevImage" src="images/prev.png" />
+                <img id="nxtImage" src="images/nxt.png" />
+                
+  	 	<div id="showImage" class="loader">
+     		</div>
+     		</div>
+  			
+    	</div>         
+        <div id="grid" class="main">
+        	<nav id="navigations">
+                <a id="nonTech1" class="nextArrow nonTech 13">→</a>
+                <a id="tech1" class="nextArrow tech 4">→</a>
+                <a id="sports1" class="nextArrow sports 5">→</a>
+            </nav>
+            <div id="details">
+            	<p> Non -<br/> Technical </p>
+                <p> Technical </p>
+                <p> Aaveg </p>
+            </div>
+       	  <div class="view nonTech 13">
+            	<!--this view-back div is used for the backside of the image where i have to put new images-->
+                <div class="view-back" id="nonTech">
+                </div>
+                
+                <img class="imageViews" src="nonTech/1min.JPG">
+            </div>
+            <div class="view tech 4">
+                <div class="view-back" id="tech"></div>
+                <img class="imageViews" src="tech/1min.JPG">
+            </div>
+            <div class="view sports 5">
+                <div class="view-back" id="sports">
+                </div>
+                <img class="imageViews" src="sports/1min.JPG">
+            </div>
+            <script type="text/javascript">	
+                
+                Modernizr.load({
+                    test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+                    yep : ['js/eventimagesscript.js'],
+                    nope: 'css/fallback.css',
+                    callback : function( url, result, key ) {
+                            
+                        if( url === 'js/eventimagesscript.js' ) {
+                            $( '#grid' ).hoverfold();
+                        }
+    
+                    }
+                });
+                    
+            </script>
+        </div>
+    </div>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$("canvas.snow").let_it_snow({
+			  windPower: 0,
+			  speed: 0,
+			  color: "#F21313",
+			  size:100,
+			  opacity: 0.00000001,
+			  count: 25,
+			  interaction: false
+			});
+	  });
+    
+  	</script>
+</body>
+</html>

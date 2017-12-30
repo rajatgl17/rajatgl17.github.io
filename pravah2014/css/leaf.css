@@ -1,0 +1,217 @@
+.leaf, .cover{
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	background: #AAAAAA;
+}
+
+.leaf{
+	border-radius: 50%;
+}
+.insideLayer1{
+	position: relative;
+	height: 50px;
+	width: 195px;
+	background: black;
+	border-radius: 50%;
+	border-top-right-radius: 0;
+	top: 25px;
+	left: -8px;
+	-webkit-transform: rotate(12.5deg);
+	-moz-transform: rotate(12.5deg);
+	-ms-transform: rotate(12.5deg);
+	-o-transform: rotate(12.5deg);
+	transform: rotate(12.5deg);
+	
+	-webkit-transition: all 1s ease-in;
+}
+
+.cover{
+	background: transparent;
+	overflow: hidden;
+	height: 60px;
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+}
+
+#cover1{
+	z-index: 7;
+}
+#cover2{
+	z-index: 6;
+}
+#cover3{
+	z-index: 5;
+}
+#cover4{
+	z-index: 4;
+}
+#cover5{
+	z-index: 3;
+}
+#cover6{
+	z-index: 2;
+}
+#cover7{
+	z-index: 1;
+}
+#eastLeaf{
+	background: -webkit-linear-gradient(left, orange 60%, maroon);
+		background: -moz-linear-gradient(left, orange 60%, maroon);
+			background: -ms-linear-gradient(left, orange 60%, maroon);
+				background: linear-gradient(left, orange 60%, maroon);
+}
+#northEast1Leaf{
+	background: -webkit-linear-gradient(left, orange 80%, red);
+	background: -moz-linear-gradient(left, orange 80%, red);
+	background: -ms-linear-gradient(left, orange 80%, red);
+	background: linear-gradient(left, orange 80%, red);
+	
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+	
+}
+#northEast2Leaf{
+	background: -webkit-linear-gradient(left, orange 30%, yellow);
+	background: -moz-linear-gradient(left, orange 30%, yellow);
+	background: -ms-linear-gradient(left, orange 30%, yellow);
+	background: linear-gradient(left, orange 30%, yellow);
+
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+	
+}
+#northLeaf{
+	background: -webkit-linear-gradient(left, orange 20%, yellow 80%, green);
+	background: -moz-linear-gradient(left, orange 20%, yellow 80%, green);
+	background: -ms-linear-gradient(left, orange 20%, yellow 80%, green);
+	background: linear-gradient(left, orange 20%, yellow 80%, green);
+	
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+}
+#northWest1Leaf{
+	background: -webkit-linear-gradient(left, orange 5%, yellow 30%, green 50%, blue 90%);
+	background: -moz-linear-gradient(left, orange 5%, yellow 30%, green 50%, blue 90%);
+	background: -ms-linear-gradient(left, orange 5%, yellow 30%, green 50%, blue 90%);
+	background: linear-gradient(left, orange 5%, yellow 30%, green 50%, blue 90%);
+	
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+}
+#northWest2Leaf{
+	background: -webkit-linear-gradient(left, orange 5%, yellow 10%, green 30%, blue 90%);
+	background: -moz-linear-gradient(left, orange 5%, yellow 10%, green 30%, blue 90%);
+	background: -ms-linear-gradient(left, orange 5%, yellow 10%, green 30%, blue 90%);
+	background: linear-gradient(left, orange 5%, yellow 10%, green 30%, blue 90%);
+	
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+}
+#westLeaf{
+	background: -webkit-linear-gradient(left, green 40%, blue 90%);
+	background: -moz-linear-gradient(left, green 40%, blue 90%);
+	background: -ms-linear-gradient(left, green 40%, blue 90%);
+	background: linear-gradient(left, green 40%, blue 90%);
+	
+	-webkit-transform-origin-x: 0 40px;
+	-moz-transform-origin: 0 40px;
+	-ms-transform-origin-x: 0 40px;
+	transform-origin: 0 40px;
+}
+
+.northEast1Leaf{
+	-webkit-transition: all 1s ease-in 50ms;
+	-webkit-transform: rotate(-30deg);
+	-moz-transition: all 1s ease-in 50ms;
+	-moz-transform: rotate(-30deg);
+	-ms-transition: -ms-transform 1s ease-in 50ms;
+	-ms-transform: rotate(-30deg);
+	transition: transform 1s ease-in 50ms;
+	transform: rotate(-30deg);
+}
+.northEast2Leaf{
+	-webkit-transition: all 1s ease-in 50ms;
+	-webkit-transform: rotate(-60deg);
+	-moz-transition: all 1s ease-in 50ms;
+	-moz-transform: rotate(-60deg);
+	-ms-transition: -ms-transform 1s ease-in 50ms;
+	-ms-transform: rotate(-60deg);
+	transition: transform 1s ease-in 50ms;
+	transform: rotate(-60deg);
+	
+}
+.northLeaf{
+	-webkit-transition: -webkit-transform 1s ease-in 50ms;
+	-webkit-transform: rotate(-90deg);
+	-moz-transition: -moz-transform 1s ease-in 50ms;
+	-moz-transform: rotate(-90deg);
+	-ms-transition: -ms-transform 1s ease-in 50ms;
+	-ms-transform: rotate(-90deg);
+	transition: transform 1s ease-in 50ms;
+	transform: rotate(-90deg);
+	
+}
+.northWest1Leaf{
+	-webkit-transition: -webkit-transform 1s ease-in 50ms;
+	-webkit-transform: rotate(-120deg);
+	-moz-transition: -moz-transform 1s ease-in 50ms;
+	-moz-transform: rotate(-120deg);
+	-ms-transition: -ms-transform 1s ease-in 50ms;
+	-ms-transform: rotate(-120deg);
+	transition: transform 1s ease-in 50ms;
+	transform: rotate(-120deg);
+}
+.northWest2Leaf{
+	-webkit-transition: -webkit-transform 1s ease-in 50ms;
+	-webkit-transform: rotate(-150deg);
+	-moz-transition: -moz-transform 1s ease-in 50ms;
+	-moz-transform: rotate(-150deg);
+	-ms-transition: -ms-transform 1s ease-in 50ms;
+	-ms-transform: rotate(-150deg);
+	transition: transform 1s ease-in 50ms;
+	transform: rotate(-150deg);
+}
+.westLeaf{
+	-webkit-transition: -webkit-transform 1s ease-in 50ms;
+	-webkit-transform: rotate(-180deg);
+	-moz-transition: -moz-transform 1s ease-in 50ms;
+	-moz-transform: rotate(-180deg);
+	-ms-transition: -ms-transform 1s ease-in 50ms;
+	-ms-transform: rotate(-180deg);
+	transition: transform 1s ease-in 50ms;
+	transform: rotate(-180deg);
+}
+
+
+#leafPlace{
+	position: absolute;
+	overflow: visible;
+	display: none;
+	top: 50%;
+	left: 50%;
+}
+.leafPlaceScale{
+	-webkit-transition: all 1s ease-in;
+	-webkit-transform: scale(0.5);
+	-moz-transition: all 1s ease-in;
+	-moz-transform: scale(0.5);
+	-ms-transition: all 1s ease-in;
+	-ms-transform: scale(0.5);
+	transition: all 1s ease-in;
+	transform: scale(0.5);
+	transform-style: preserve-3d;
+	opacity: 0;
+}

@@ -1,0 +1,157 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+
+}
+
+@font-face{
+	font-family: 'AnuDrg';
+	src: url(../ANUDRG.ttf) format('truetype');
+	font-weight	: normal;
+}
+
+@font-face{
+	font-family: 'Amadeus';
+	src: url(../Amadeus.ttf) format('truetype');
+	font-weight	: normal;
+}
+
+@font-face{
+	font-family: 'AlmendraR';
+	src: url(../Almendra-Regular.otf) format('truetype');
+	font-weight	: normal;
+}
+
+html, body{
+	height: 100%;	
+}
+
+body{
+	background-image:url(../images/background.jpg) ;
+	background-attachment:fixed;
+	background-size:cover;
+	overflow-Y: scroll;
+	overflow-X: hidden;
+}
+
+#main{
+	display: none;
+	width: 1100px;
+	height: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#head {
+	height: auto;
+	position:absolute;
+	top: 0;
+	width:inherit;
+	z-index: 10;
+}
+
+#hoverMe{
+	position: relative;
+	cursor: default;
+	color: #666;
+	//font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+	font-weight:bold;
+	font-size: 14px;
+	top: 2px;
+	left: -8px;
+}
+
+.hoverMe{
+	animation-duration: 5000ms;
+	animation-name: blinking;
+	animation-iteration-count:infinite;
+	
+	-moz-animation-duration: 5000ms;
+	-moz-animation-name: blinking;
+	-moz-animation-iteration-count:infinite;
+	
+	-webkit-animation-duration: 5000ms;
+	-webkit-animation-name: 'blinking';
+	-webkit-animation-iteration-count:infinite;
+	
+	-ms-animation-duration: 5000ms;
+	-ms-animation-name: 'blinking';
+	-ms-animation-iteration-count:infinite;
+	
+	-o-animation-duration: 5000ms;
+	-o-animation-name: 'blinking';
+	-o-animation-iteration-count:infinite;
+}
+
+@keyframes blinking{
+	0%{	color: #f00; }
+	20%{ color: rgb(0, 170, 2); }
+	40%{ color: rgb(130,0,0); }
+	60%{ color: rgb(230,230,0); }
+	80%{ color: rgb(0,2,200); }
+	100%{ color: #f00; }
+}
+
+@-webkit-keyframes blinking{
+	0%{	color: #f00; }
+	20%{ color: rgb(0, 170, 2); }
+	40%{ color: rgb(130,0,0); }
+	60%{ color: rgb(230,230,0); }
+	80%{ color: rgb(0,2,200); }
+	100%{ color: #f00; }
+}
+
+@-moz-keyframes blinking{
+	0%{	color: #f00; }
+	20%{ color: rgb(0, 170, 2); }
+	40%{ color: rgb(130,0,0); }
+	60%{ color: rgb(230,230,0); }
+	80%{ color: rgb(0,2,200); }
+	100%{ color: #f00; }
+}
+
+#page {
+	position: absolute;
+	width: inherit;
+	height:auto;
+	top: 280px;
+}
+
+.special2 {
+	position: absolute;
+	width: 270px;
+	height: 42px;
+	margin: 0 auto;
+	background: rgba(12, 12, 12, 0.5);
+	padding: 7px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	top: 10%;
+	left: 8%;
+	z-index: 500;
+}
+
+#mobiSiteLink{
+	color: white;
+}
+
+.special2:hover{
+	background: rgba(12, 12, 12, 1);
+}
+
+#blockPage{
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	background:#000;	
+}
+
+
+
+#blockPageImage{
+	position:fixed;
+	top: 50%;
+	left: 45%;
+}

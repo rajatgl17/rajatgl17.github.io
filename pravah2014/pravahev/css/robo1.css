@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body{
+	background-image:url(../i/pics/bg.jpg) ;
+	background-attachment:fixed;
+	background-size:cover;
+	overflow-Y: scroll;
+	overflow-X: auto;
+}
+
+div#robowarPage{
+	text-align:center;
+	min-width: 1000px;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 60px;
+	font-size: 22px;
+}
+
+
+span.topic{
+	font-weight:bolder;
+	font-size: 22px;	
+}
+
+h1,h2,h3{
+	color: #5B0000;
+}
+
+table, td, th{
+	border:3px ridge black;
+	border-collapse:collapse;
+	background-color:#FFF;
+	font-size: 18px;
+}
+
+th{
+	text-align: center;	
+	font-size: 22px;
+}
+
+span.topic2{
+	font-weight:bolder;
+	font-size: 20px;	
+}
+
+td, li{
+	text-align:start;
+}
+
+.studentDetails{
+	position: relative;
+	border: none;
+	left: 30%;
+	padding: 10px;
+	background-color: rgba(2,2,2,0);
+	alignment-adjust:before-edge;
+}

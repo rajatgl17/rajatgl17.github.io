@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1367.7592"
+   height="181.62041"
+   id="svg2"
+   style="enable-background:new">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3788">
+      <stop
+         id="stop3790"
+         style="stop-color:#3b64d6;stop-opacity:0.375"
+         offset="0" />
+      <stop
+         id="stop3798"
+         style="stop-color:#002e91;stop-opacity:0.39285713"
+         offset="0.5" />
+      <stop
+         id="stop3792"
+         style="stop-color:#002e5f;stop-opacity:0.5535714"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3770">
+      <stop
+         id="stop3772"
+         style="stop-color:#3dadff;stop-opacity:0.38392857"
+         offset="0" />
+      <stop
+         id="stop3786"
+         style="stop-color:#0a729f;stop-opacity:0.38392857"
+         offset="0.75" />
+      <stop
+         id="stop3774"
+         style="stop-color:#0a729f;stop-opacity:0.5535714"
+         offset="1" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect2993" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect2987" />
+    <pattern
+       id="pattern5209"
+       patternTransform="translate(802.46088,-35.723705)"
+       height="15"
+       width="30"
+       patternUnits="userSpaceOnUse">
+      <image
+         xlink:href="../images/honeycomb.png"
+         y="0"
+         x="0"
+         id="image2998"
+         height="15"
+         width="30" />
+    </pattern>
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter5214">
+      <feGaussianBlur
+         id="feGaussianBlur5216"
+         stdDeviation="3.5" />
+    </filter>
+    <linearGradient
+       x1="0.86688453"
+       y1="879.30927"
+       x2="1368.6261"
+       y2="879.30927"
+       id="linearGradient3776"
+       xlink:href="#linearGradient3770"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="0.36328173"
+       y1="622.47357"
+       x2="1365.7379"
+       y2="622.47357"
+       id="linearGradient3796"
+       xlink:href="#linearGradient3788"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-0.8668845,-788.49903)"
+     id="layer1"
+     style="display:inline">
+    <path
+       d="m 1.081781,947.26967 c 28.272571,-0.60446 529.152799,-0.36903 731.448839,-0.91485 39.70828,-0.10713 48.92188,-0.25799 85.85438,-7.32363 51.22459,-24.45316 73.36758,-76.52624 114.78766,-109.0613 45.22312,-35.52231 67.75404,-41.43727 106.23924,-41.46944 81.3406,-0.068 136.2927,2.33734 217.9367,1.88545 -0.5621,26.0655 -1.4582,45.66926 6.1367,67.78588 4.8484,14.11855 86.3519,9.34069 105.1408,9.53572 l -0.053,31.09778 c 0,0 -88.3498,4.49913 -119.3208,-7.17139 -9.2226,-3.47526 -23.055,-14.41973 -25.8822,-39.01187 -56.2894,1.7311 -129.7144,-1.37237 -204.3497,0.60027 -39.77255,16.00678 -37.70522,19.92404 -58.68095,35.50234 -42.03458,28.82744 -57.93696,52.86686 -98.55251,67.34253 -38.09301,14.30325 -86.80585,11.24153 -126.6205,11.37464 -202.83795,0.67815 -696.476956,3.84286 -734.2995555,2.22048 z"
+       id="path2985"
+       style="fill:url(#linearGradient3776);fill-opacity:1;fill-rule:evenodd;stroke:none" />
+  </g>
+</svg>

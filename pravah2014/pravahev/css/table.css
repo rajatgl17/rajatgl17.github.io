@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pattern
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 25px;
+	width: 1280px;
+	border-collapse: collapse;
+	/*<!--background: url('../i/patternb.png');-->*/
+}
+#pattern thead tr
+{
+	/*<!--<!--background: url('../i/patternb-head.png');-->-->*/
+}
+#pattern th
+{
+	padding-right:50px;
+	font-size: 30px;
+	font-weight:!important;
+	padding:8px;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+#pattern td
+{
+	padding: 15px; 
+	font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:20px;
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid transparent;
+}
+/*#pattern tbody tr:hover td
+{
+	color: #339;
+	background: #cdcdee;
+}*/

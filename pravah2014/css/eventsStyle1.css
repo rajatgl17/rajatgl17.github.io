@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: 'Almendra';
+	src:url(../Almendra-Bold.otf) format('opentype');
+	font-weight	: normal;
+}
+#contactText {
+	width: 1000px;
+	text-align:center;
+	font-size:22px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#head {
+	height:auto;
+	top: 10px;
+	width:1100px;
+	z-index: 10;
+}
+
+
+.Events{
+	position:relative;
+	display:inline-block;
+	height: 300px;
+	width: 400px;
+	border-radius: 10%;
+	box-shadow: 0 0 50px #fff;
+	margin: 40px;
+	background: -webkit-linear-gradient(top, yellow, black , yellow);
+	background: -moz-linear-gradient(top, yellow, black , yellow);
+	background: -ms-linear-gradient(top, yellow, black , yellow);
+	background: -o-linear-gradient(top, yellow, black , yellow);
+	background: linear-gradient(top, yellow, black , yellow);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+}
+
+.Events1{
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	transition: all 1.5s;
+	
+	-webkit-transform: rotate(-360deg);
+	transform: rotate(-360deg);	
+}
+
+.Events > p{
+	cursor:pointer;
+	position:relative;
+	top: 40%;
+	color:#FFF;
+	font-size:48px;
+	font-family:"Almendra";
+}
+
+.events{
+	position: relative;
+	left: 10%;
+}
+
+.Content1{
+	display: none;
+	height: 270px;
+	width: 370px;
+	font-size:18px;
+	position:absolute;
+	background-color:rgba(3,3,3,0.9);
+	border-radius: 10%;
+	top: 0px;
+	color: #FFF;
+	text-align:start;
+	padding: 15px;
+}
+
+.Content1 ul{
+	padding: 0;
+	list-style: none;
+}

@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+#sponsors{
+	//display: block;
+	display: none;
+	position: absolute;
+	color: #000;
+	z-index: 20000;
+	min-width: 738px;
+	background: rgba(255,255,255,0.5);
+	width: 738px;
+	left: 22%;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	//padding-bottom: 30px;
+	top: 170px;
+	text-align: center;
+}
+
+h1.sponsorsHead{
+	line-height: 65px;
+	
+}
+
+hr{
+	height: 5px;
+	background: -webkit-linear-gradient(left, violet, indigo, blue, green, yellow, orange, red);
+	background: -moz-linear-gradient(left, violet, indigo, blue, green, yellow, orange, red);
+	border: 0;
+}
+
+.sponsorImages{
+	text-align: center;
+	padding: 40px;
+}
+
+.sponsorImages2{
+	display: inline-block;
+	width: 100px;
+	box-shadow: 0 0 20px #000000;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 10%;
+	
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	transition: all 1.5s;	
+}
+
+#spicy{
+	background-image:url(../images/SpicyTreat.png);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin: 0 auto;
+}
+
+#skylac{
+	background-image:url(../images/skylac.jpg);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#srs{
+	background-image:url(../images/saras.jpg);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#pepsi{
+	background-image:url(../images/pep.jpg);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#blue{
+	background-image:url(../images/blu.jpg);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#rat{
+	background-image:url(../images/rat.png);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#proff{
+	background-image:url(../images/pg.png);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#etv{
+	background-image:url(../images/etv.jpg);
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin: 0 auto;
+}
+
+.sponsorImages2:hover{
+	-webkit-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+}

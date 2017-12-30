@@ -1,0 +1,40 @@
+@charset "utf-8";
+.special {
+	position:absolute;
+	width: auto;
+	height:60px;
+	margin: 0 auto;
+	background:url(../images/4.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	 top: 10%;	
+	 left: 70%;
+}
+
+#counter{
+	position: relative;
+	 left: 0;}
+
+.digit-separator {position: relative; float: left; width: 17px; height: 44px; overflow: hidden; background-image: url(../images/digit_separator.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.digit {
+	background-image:url(../images/digits.png)
+}
+
+#shading {
+	background-image: url(../images/sprites.png);
+	background-position: 0px -396px;
+	background-repeat: repeat-x;
+	float: left;
+	height: 44px;
+	position: absolute;
+	width: 291px;	
+	z-index:4100;
+	top:0;
+	left:0;
+}
+/* CSS Document */
+

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gallery | PRAVAH - 2015 | SKIT</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+					slide_interval          :   3000,
+					transition              :   3, 
+					transition_speed		:	700,		
+					slide_links				:	'blank',
+					slides 					:  	[			
+														{image : 'images/15.jpg', title : '', thumb : 'images/thumbs/15.jpg', url :''},
+														{image : 'images/16.jpg', title : '', thumb : 'images/thumbs/16.jpg', url :''},
+														{image : 'images/17.jpg', title : '', thumb : 'images/thumbs/17.jpg', url :''},
+														{image : 'images/18.jpg', title : '', thumb : 'images/thumbs/18.jpg', url :''},
+														{image : 'images/19.jpg', title : '', thumb : 'images/thumbs/19.jpg', url :''},
+														{image : 'images/20.jpg', title : '', thumb : 'images/thumbs/20.jpg', url :''},
+														{image : 'images/21.jpg', title : '', thumb : 'images/thumbs/21.jpg', url :''},
+														{image : 'images/22.jpg', title : '', thumb : 'images/thumbs/22.jpg', url :''},
+														{image : 'images/23.jpg', title : '', thumb : 'images/thumbs/23.jpg', url :''},
+														{image : 'images/24.jpg', title : '', thumb : 'images/thumbs/24.jpg', url :''},
+														{image : 'images/25.jpg', title : '', thumb : 'images/thumbs/25.jpg', url :''},
+													{image : 'images/26.jpg', title : '', thumb : 'images/thumbs/26.jpg', url :''},{image : 'images/27.jpg', title : '', thumb : 'images/thumbs/27.jpg', url :''},{image : 'images/28.jpg', title : '', thumb : 'images/thumbs/28.jpg', url :''}
+													
+													
+													
+												]
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+	</style>
+
+<body>
+
+	<ul id="demo-block">
+		<li><a href="http://skitpravah.com/#home" target="_self">Back to Home</a></li>
+	</ul>
+	
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			<div id="slidecaption"></div>
+			
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+			
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+.col1, .col2, .col3, .cols { float:left;}
+
+.col1{ width:280px;}
+.col2{ width:209px;}
+
+.cols{ width:98px;}
+
+#galleryt .col1{ width:135px;}
+#galleryt .col2{ width:425px;}
+
+

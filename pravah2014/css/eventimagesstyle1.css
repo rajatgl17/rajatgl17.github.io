@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+
+ * { 
+ 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	margin: 0;	
+}
+ 
+ img.imageViews, .slice{
+	width: 316px;
+	height: 216px;
+	background-size:cover; 
+ }
+ 
+ .main1{
+	 
+	overflow-Y:	scroll;
+ }
+
+#grid{
+	margin-top:auto;
+	margin-left:37%;
+	height:auto;
+}
+
+.view {
+	width: 316px;
+	height: 216px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	position: relative;
+	border: 8px solid #fff;
+	box-shadow: 0px 0px 40px rgba(255,255,255,1);
+	background: #333;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-o-perspective: 500px;
+	-ms-perspective: 500px;
+	perspective: 500px;
+}
+
+/*.view:nth-child(even) {
+	position: absolute;
+	width: 316px;
+	height: 216px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: 376px;
+	top: -0.5px;
+	border: 8px solid #fff;
+	box-shadow: 0px 0px 40px rgba(255,255,255,1);
+	background: #333;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-o-perspective: 500px;
+	-ms-perspective: 500px;
+	perspective: 500px;
+}*/
+
+.view .slice{
+	width: 60px;
+	height: 100%;
+	z-index: 100;
+	
+	
+	/*this code is for making animation 3d*/
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	/*this code is used for marking a center point from where the transition will start*/
+	/*and thus helps in maintaining the slice's distance properly*/
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+	
+	
+	/*this code helps in maintaining smootheness and thus flickerness is removed*/
+	-webkit-transition: -webkit-transform 150ms ease-in-out;
+	-moz-transition: -moz-transform 150ms ease-in-out;
+	-o-transition: -o-transform 150ms ease-in-out;
+	-ms-transition: -ms-transform 150ms ease-in-out;
+	transition: transform 150ms ease-in-out;
+		
+}
+
+.view div.view-back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	background: #666;
+	z-index: 0;
+}
+
+#navigations{
+	position:absolute;	
+}
+a.nextArrow {
+	display: block;
+	font-size: 36px;
+	z-index: 300;
+	color: rgba(255,255,255,0.4);
+	position: relative;
+	margin-top: 95px;
+	margin-bottom: 235px;
+	left: 350px;
+	bottom: 15px;
+	border: 5px solid rgba(255,255,255,0.6);
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	line-height: 31px;
+	text-align: center;
+	font-weight: bold;
+}
+
+a.nextArrow:hover {
+	z-index: 500;
+	color: #fff;
+	border-color: #fff;
+}
+
+
+/*because of this all the slices are put at a justified position, removing it we can see the actual animation goin on, which is quiet interesting if this code is hidden*/
+.view .s2, 
+.view .s3, 
+.view .s4, 
+.view .s5 {
+	/*these translation helps each slice to be placed 60px after every division*/
+	-webkit-transform: translate3d(60px,0,0);
+	-moz-transform: translate3d(60px,0,0);
+	-o-transform: translate3d(60px,0,0);
+	-ms-transform: translate3d(60px,0,0);
+	transform: translate3d(60px,0,0);
+}
+.view .s1 {
+	background-position: 0px 0px;
+}
+.view .s2 {
+	background-position: -60px 0px;
+}
+.view .s3 {
+	background-position: -120px 0px;
+}
+.view .s4 {
+	background-position: -180px 0px;
+}
+.view .s5 {
+	background-position: -240px 0px;
+}
+
+.view .overlay {
+	width: 60px;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity 150ms ease-in-out;
+	-moz-transition: opacity 150ms ease-in-out;
+	-o-transition: opacity 150ms ease-in-out;
+	-ms-transition: opacity 150ms ease-in-out;
+	transition: opacity 150ms ease-in-out;
+}
+
+.view:hover .overlay {
+	opacity: 1;
+}
+
+.view img {
+	position: absolute;
+	z-index: 0;
+	-webkit-transition: left 0.3s ease-in-out;
+	-o-transition: left 0.3s ease-in-out;
+	-moz-transition: left 0.3s ease-in-out;
+	-ms-transition: left 0.3s ease-in-out;
+	transition: left 0.3s ease-in-out;
+}
+
+#nonTech{
+	background:url(../nonTech/2min.JPG);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#tech{
+	background:url(../tech/2min.JPG);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#sports{
+	background:url(../sports/2min.JPG);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}

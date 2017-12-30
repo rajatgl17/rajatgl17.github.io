@@ -1,0 +1,175 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/digital.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: "crysis";
+  src: url("../fonts/Crysis.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bloodwax";
+  src: url("../fonts/BloodWax.otf") format("opentype");
+}
+@font-face {
+  font-family: "robotica";
+  src: url("../fonts/Robotica.ttf") format("truetype");
+}
+@font-face {
+  font-family: "transformers";
+  src: url("../fonts/Transformers.ttf") format("truetype");
+}
+@font-face {
+  font-family: "avp";
+  src: url("../fonts/AVP.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bitwise";
+  src: url("../fonts/Bitwise.ttf") format("truetype");
+}
+body { 
+  background: url('../images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:bitwise;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+#main-page1{
+	position: absolute;
+	width: 100%;
+  	height: 100%;
+}
+#main-page2{
+	position: absolute;
+	width: 100%;
+  	height: 100%;
+  	overflow: hidden;
+}
+#menubar{
+	position: absolute;
+	width:250px;
+	height: 100%;
+	float:left;
+}
+#pravah{
+	width:720px;
+	margin:0 auto;
+	margin-top:250px;
+	color:white;
+	display:block;
+}
+
+#content1{
+	position: absolute;
+	bottom: 15px;
+	left: 41%;
+	background: rgba(0,0,0,0.3);
+	z-index: 105;
+	width: 30%;
+	height: 8%;
+	text-align: center;
+}
+#content2{
+	font-family: calibri;
+	color: #fff;
+	position:absolute;
+	top:0px;
+	left:0;
+	width: 85%;
+	padding-right: 70px;
+	padding-left: 52px;
+	height: 96.5%;
+	z-index:100;
+	overflow: auto;
+	display: none;
+	text-align: justify;
+}
+li[highlight]{
+	background: rgba(255,255,255,0.4);
+}
+li[color=white]{
+	background: rgba(255,255,255,0.6);
+}
+#content2 h1{
+	padding: 20px;
+	text-align: center;
+	font-size: 3em;
+}
+#content2 p{
+	font-size: 1em;
+	padding: 20px;
+}
+#cross{
+	width: 100%;
+	height: 64px;
+	line-height:64px;
+}
+#cross img{
+	float:right;
+}
+.hideme{
+	//display:none;
+}
+#pravah div#svg{
+	//float:left;
+	top: -82px;
+	left: 100px;
+	width:336px;
+	position: relative;
+}
+#text{
+	float:right;
+	width:386px;
+}
+#pravah h1{
+	font-family:"bitwise";
+	font-size: 100px;
+	letter-spacing: 5px;
+	display: block;
+	width: 386px;
+	
+}
+#pravah h1 span{
+	position: absolute;
+	display: inline;	
+	//margin:200px auto 0px auto;
+	
+}
+
+#pravah hr{
+	position: relative;
+	top: 110px;
+}
+#pravah div#logo-meta-1{
+	position: relative;
+	height: 40px;
+	top: 100px;
+	width: 450px;
+	overflow:hidden;
+}
+#pravah div#logo-meta-1 span{
+	position: relative;
+	letter-spacing: 1.5px;
+	line-height: 40px;
+	top:0;
+	left: 0;
+	font-size: 20px;
+	display: block;
+	width: 450px;
+	margin:10px auto 50px auto;
+}
+#timer{
+	position: absolute;
+	z-index:1000;
+	top: -200px;
+	right: -200px;
+	transform: scale(0.35);
+}

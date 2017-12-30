@@ -1,0 +1,273 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/digital.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: "bitwise";
+  src: url("../fonts/Bitwise.ttf") format("truetype");
+}
+body { 
+  background: url('../images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family:bitwise;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+#main-page1{
+	position: absolute;
+	width: 100%;
+  	height: 100%;
+}
+#main-page2{
+	position: absolute;
+	width: 100%;
+  	height: 100%;
+  	overflow: hidden;
+}
+#menubar{
+	position: absolute;
+	width:250px;
+	height: 100%;
+	float:left;
+}
+#pravah{
+	width:44.7086%;
+	height: 45.356%;
+	margin:0 auto;
+	margin-top:20.24%;
+	color:white;
+	display:block;
+}
+#pravah > div{
+	width: 100%;
+	height: 100%;
+	 position: relative;
+	 left: -20.177%;
+}
+#skit_presents {
+text-align: center;
+font-family: serif;
+margin: 5px 10px;
+position: fixed;
+top: 15px;
+left: 50%;
+width: 660px;
+font-size: 1.4em;
+background: url('../images/skitlogo.png') no-repeat;
+background-size: 50px;
+background-position-x: 38px;
+background-position-y: 0px;
+margin-left: -330px;
+}
+
+#content1{
+	background: rgba(0,0,0,0.3);
+	z-index: 105;
+	text-align: center;
+padding: 3px;
+}
+#content1 #eventTitle {
+color: #fff;
+font-size: 2em;
+}
+#content2{
+	font-family: calibri;
+	color: #fff;
+	position:absolute;
+	top:40px;
+	left:0;
+	width: 91%;
+	padding-right: 70px;
+	padding-left: 52px;
+	height: 96.5%;
+	z-index:100;
+	overflow: auto;
+	display: none;
+	text-align: justify;
+}
+li[highlight]{
+	background: rgba(255,255,255,0.4);
+}
+li[color=white]{
+	background: rgba(255,255,255,0.6);
+}
+#content2 h1{
+	padding: 20px;
+	text-align: center;
+	font-size: 3em;
+}
+#content2 p{
+	font-size: 1em;
+	padding: 20px;
+}
+#cross{
+	width: 100%;
+	height: 64px;
+	line-height:64px;
+}
+#cross img{
+	float:right;
+}
+.hideme{
+	//display:none;
+}
+#pravah div#svg{
+	//float:left;
+	top: -82px;
+	left: 100px;
+	width:46.667%;
+	height: 100%;
+	position: relative;
+}
+#text{
+	float:right;
+	width:53.611%;
+	height: 33.003%;
+}
+#pravah h1{
+	font-family:"bitwise";
+	font-size: 7em;
+	letter-spacing: 5px;
+	display: block;
+	width: 100%;
+	
+}
+#pravah h1 span{
+	position: absolute;
+	display: inline;	
+	//margin:200px auto 0px auto;
+	
+}
+
+#pravah hr{
+	position: relative;
+	top: 110px;
+}
+#pravah div#logo-meta-1{
+	position: relative;
+	height: 40px;
+	top: 100px;
+	width: 450px;
+	overflow:hidden;
+}
+#pravah div#logo-meta-1 span{
+	position: relative;
+	letter-spacing: 1.5px;
+	line-height: 40px;
+	top:0;
+	left: 0;
+	font-size: 20px;
+	display: block;
+	width: 450px;
+	margin:10px auto 50px auto;
+}
+#timer{
+	position: absolute;
+	opacity: 0;
+	z-index:1000;
+	top: 5px;
+	right: 0;
+	width: 27.84%;
+	height: 46.6%;
+}
+
+
+
+
+
+
+#sponsors {
+	margin: 20px;
+}
+#sponsors hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding: 0;
+}
+#sponsors_team {
+	//margin: 64px 0 0 0;
+	text-align: center;
+	font-family: Ubuntu;
+	font-size: 24px;
+}
+.sponsor_box {
+	display: inline-block;
+	padding: 10px;
+	background: rgba(127,127,127,0.2);
+	border-radius: 5px;
+	/* border: 1px solid #000; */
+	box-shadow: 0 0 20px #fff inset;
+}
+.sponsor_box div.sponsor_image {
+	display: block;
+	height: 128px;
+	width: 128px;
+	margin: 0px 16px;
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.sponsor_box div.sponsor_name {
+	width: 160px;
+	display: block;
+	text-align: center;
+	padding: 0px 0px 10px;
+	font-weight: bold;
+	margin-bottom: 14px;
+	text-transform: uppercase;
+}
+#updates{
+	position: absolute;
+	left: 0;
+	top: 35%;
+	height: 20%;
+	width: 25%;
+	opacity: 0;
+}
+#update-animate{
+	position: absolute;
+	left: -100%;
+	width:0%;
+	height: 100%;
+	border-radius: 200%;
+	background-color: rgba(255,255,255, 1);
+}
+#updates .update-seen{
+	opacity: 0;
+}
+
+#updates img{
+	float: left;
+	height: 48%;
+	margin: 10% 2.5%;
+	border: 1px solid black;
+}
+#update-content{
+	float: right;
+	width: 70%;
+	height: 64%;
+	margin: 10% 0%;
+	font-family: arial;
+	color: rgba(255,255,255, 0.9);
+	background-color: rgba(0,0, 0, 0.5);
+}
+#update-content p:nth-child(1){
+	font-size: 1.2em;
+	margin: 5px 0px;
+}
+#update-content p:nth-child(2){
+	font-size: 0.7em;
+	margin: 5px 0px;
+}
