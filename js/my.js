@@ -3,15 +3,15 @@ var bootTime = 2000; //2000
 var text, delay, charPosition, $typeAt;
 var flag=0;
 
-var url1 = "https://github.com/rajatgl17/SkitClassTests";
-var url2 = "https://github.com/rajatgl17/ApnaTiffin";
-var url3 = "http://rajatgoel.in/work/pravah2015/";
-var url4 = "http://rajatgoel.in/work/pravah2014/";
-var url5 = "https://play.google.com/store/apps/details?id=in.ac.skit.skitech&hl=en";
+var url1 = "https://rajatgl17.github.io/github-insights/";
+var url2 = "http://skitclasstests.skit.ac.in";
+var url3 = "https://github.com/rajatgl17/ApnaTiffin";
+var url4 = "https://rajatgl17.github.io/pravah2015/";
+var url5 = "https://rajatgl17.github.io/pravah2014/";
+var url6 = "https://play.google.com/store/apps/details?id=in.ac.skit.skitech&hl=en";
 
 var about="Hey! My name is Rajat Goel."+
-"~Currently, I'm working as Program Analyst Trainee (Mainframe)  at Cognizant Technology Solutions, Chennai."+
-"`I'm looking for a job opportunity (preferably as a Java developer).";
+"`Currently, I'm working as Software Engineer at Azuga Telematics, Bengaluru.";
 
 var contact = 'E-mail : rajatgl17[at]gmail[dot]com';
 
@@ -28,62 +28,71 @@ var about_site = "I started developing this portfolio website under Freecodecamp
 var blog = "Coming soon!!!";
 
 var portfolio="~------- Web applications -------"+
-"^1. SKITClassTests - Online Assessment Portal"+
-"^2. ApnaTiffin - E-commerce website"+
-"^3. Pravah 2015"+
-"^4. Pravah 2014"+
+"^1. Github Insights"+
+"^2. SKITClassTests - Online Assessment Portal"+
+"^3. ApnaTiffin - E-commerce website"+
+"^4. Pravah 2015"+
+"^5. Pravah 2014"+
 "~"+
 "------- Mobile applications -------"+
-"^5. Skitech - Android Application"+
+"^6. Skitech - Android Application"+
 "`";
 
 var help="~Commands :"+
-"^PORTFOLIO       -- list"+
-"^HELP            -- help information"+
-"^DESC <number>   -- eg. DESC 3 for description of pravah 2015"+
-"^LAUNCH <number>"+
+"^PORTFOLIO       -- list of all projects"+
+"^HELP            -- help"+
+"^DESC <number>   -- for description eg. 'DESC 1'"+
+"^LAUNCH <number> -- open project link"+
 "^CLEAR"+
 "^EXIT"+
 "`";
 
+
 var desc1="~"+
-"SKITClassTests - Online Assessment Portal"+
-"~Description: This portal was developed for conducting class tests in my college (SKIT, Jaipur). "+
+"Github Insights"+
+"~Description:  Analytical dashborad for programming languages comparison based on statistics"+
+" acquired using Github's public search APIs."+
+"`Skills : Java, Servlets, JDBC, MySQL, REST-API, Dygraph.js"+
+"~Link : "+url1+
+"`";
+
+var desc2="~"+
+"SKITClassTests"+
+"~Description: An online assessment portal developed for conducting class tests in my college (SKIT, Jaipur). "+
 "This assessment portal has two parts. One for students, to login and give test and "+ 
 "other for teachers to create new tests, edit tests, and obtain students mark list in excel format."+
 "`Skills : PHP, MariaDB, CodeIgniter framework"+
-"~Link: http://skitclasstests.skit.ac.in/ and "+url1+
+"~Link: "+url2+
 "`";
-var desc2="~"+
-"ApnaTiffin – E-commerce Website"+
-"~Description: This ecommerce website was built for a Jaipur based tiffin service provider."+
+var desc3="~"+
+"ApnaTiffin"+
+"~Description: An e-commerce website built for a Jaipur based tiffin service provider."+
 "The website is divided into two sub-websites. The frontend part is for users to sign up and book"+
 " their orders, while backend part is for management to view user details, check orders and manage "+
 "frontend website (change banners, edit food menu etc.)"+
 "`Skills : PHP, MySQL, PayU money API, CodeIgniter framework"+
-"~Link : "+url2+
-"`";
-var desc3="~"+
-"Pravah 2015 - Website"+
-"~Description: Website for my college’s annual techfest – Pravah for the year 2015."+
-"`Skills : HTML5, CSS3, JavScript (GreenSock library), SVG, PHP, MySQL"+
 "~Link : "+url3+
 "`";
 var desc4="~"+
-"Pravah 2014 - Website"+
-"~Description: Website for my college’s annual techfest – Pravah for the year 2014."+
-"`Skills : HTML5, CSS3, JavScript, PHP, MySQL"+
+"Pravah 2015 - Website"+
+"~Description: Website for my college’s annual techfest – Pravah for the year 2015."+
+"`Skills : HTML5, CSS3, JavScript (GreenSock library), SVG, PHP, MySQL"+
 "~Link : "+url4+
 "`";
 var desc5="~"+
+"Pravah 2014 - Website"+
+"~Description: Website for my college’s annual techfest – Pravah for the year 2014."+
+"`Skills : HTML5, CSS3, JavScript, PHP, MySQL"+
+"~Link : "+url5+
+"`";
+var desc6="~"+
 "Skitech - Android Application"+
 "~Description: This android application facilitates the students of SKIT by sending them the college notices "+
 "right in the notification menu of their android mobiles. The backend part for posting notices is "+
 "developed using core PHP. The android application uses GCM service for push notifications."+
 "`Skills : Java, Android SDK, jsoup, SQLite, PHP, MySQL"+
-"~Link : "+url5+
+"~Link : "+url6+
 "`";
-
 
 $(window).bind('load',function(){
 	$('#loading').fadeOut().promise().then(function(){
@@ -254,11 +263,13 @@ function execute_command(command){
 		case 'desc 3': text = desc3; break;
 		case 'desc 4': text = desc4; break;
 		case 'desc 5': text = desc5; break;
+		case 'desc 6': text = desc6; break;
 		case 'launch 1': window.open(url1, '_blank'); text='~'; break;
 		case 'launch 2': window.open(url2, '_blank'); text='~'; break;
 		case 'launch 3': window.open(url3, '_blank'); text='~'; break;
 		case 'launch 4': window.open(url4, '_blank'); text='~'; break;
 		case 'launch 5': window.open(url5, '_blank'); text='~'; break;
+		case 'launch 6': window.open(url6, '_blank'); text='~'; break;
 		case 'clear': $('#cmd_output').empty(); text='~'; break;
 		case 'exit': $('#home').show();	$('#cmd').hide(); flag=0; break;
 		default: text = '~ \''+command+'\' is not recogized as a internal or external command.`'; break;
