@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<title>Rajat Goel - Portfolio</title>
+	<meta name="keywords" content="Rajat Goel, rajatgl17, software engineer, windows 1.0 UI,
+	 portfolio, skitclasstests, pravah, skitech, apnatiffin" />
+	 <meta name="description" content="Interactive personal portfolio website developed under FreeCodeCamp's - 'Build a Personal Portfolio Webpage' challenge." />
+	<noscript>
+		<p class="boot_cursor">Boot Device Not Found</p>
+		<p class="boot_cursor">Please enable JavaScript on your browser</p>
+	</noscript>
+	<style media="screen" type="text/css">
+		body{
+			background: black;
+			color:#c7c2c2;
+		}
+		.cursor{
+			opacity: 1;
+			-webkit-animation: cursor 0.8s infinite;
+			-moz-animation: cursor 0.8s infinite;
+			animation: cursor 0.8s infinite;
+		}
+		.boot_cursor{
+			margin: 30px;
+			font-size: 2em;
+		}
+		@keyframes cursor{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-webkit-keyframes cursor{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-moz-keyframes cursor{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+	</style>	
+</head>
+<body>
+	<div id="loading"><div class="cursor boot_cursor">|</div></div>
+	<div id="boot_screen" style="display: none;">
+		<div id="big_text_main">MICROSOFT<span>&reg;</span></div>
+		<div id="small_text_main">
+			Microsoft Windows<br>
+			Version 1.01
+		</div>
+		<div id="footer_text">
+			Copyright (c) Microsoft Corporation, 1985. All Rights Reserved.<br>
+			Microsoft is a registered trademark of Microsoft Corp.
+		</div>
+	</div>
+
+	<div id="main_screen" style="display: none;">
+		<div class="top_nav">
+			<div class="menu_icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			MS-DOS Executive
+			<div class="close_icon">
+				<div class="bar4"></div>
+			</div>
+		</div>
+		<div class="tool_menu">
+			<div class="menu_button">
+				<div class="menu_button_text m1"> File </div>
+				<ul class="dropdown_menu k1" style="display:none;">
+					<li> Run.. </li>
+					<li> Load.. </li>
+					<li> Copy </li>
+					<li> Get Info.. </li>
+					<li> Delete </li>
+					<li> Exit </li>
+				</ul>
+			</div>
+			<div class="menu_button">
+				<div class="menu_button_text m2"> View </div>
+				<ul class="dropdown_menu k2" style="display:none;">
+					<li> Short </li>
+					<li> Long </li>
+					<li> All </li>
+					<li> Partial </li>
+					<li> Programs </li>
+					<li> By name </li>
+					<li> By size </li>
+					<li> By date </li>
+				</ul>
+			</div>
+			<div class="menu_button">
+				<div class="menu_button_text m3"> Search </div>
+				<ul class="dropdown_menu k3" style="display:none; width:270px;">
+					<li> End session </li>
+					<li> Create directory </li>
+					<li> Change directory </li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_content" id="home">
+			<ul>
+				<li id="about_btn">ABOUT_ME.TXT</li>
+				<li id="portfolio_btn">PORTFOLIO.BAT</li>
+				<li id="contact_btn">CONTACT.TXT</li>
+				<a href="./resume/" target="_blank"><li>RESUME.PDF</li></a>
+				<a href="https://www.linkedin.com/in/rajatgl17" target="_blank"><li>LINKEDIN.EXE</li></a>
+				<a href="https://www.github.com/rajatgl17" target="_blank"><li>GITHUB.EXE</li></a>		
+				<li id="about_site_btn">ABOUT_THIS_SITE.TXT</li>
+				<li id="blog_btn">BLOG.TXT</li>
+			</ul>
+		</div>
+		<div class="main_content" id="notepad" style="display: none;">
+			<p><span id="notepad_p"></span><span class="cursor"> |</span></p>
+			<br>
+			<br>
+			<p id="back_btn"> Click here to go back or press Enter.</p>
+		</div>
+		<div class="main_content" id="cmd" style="display: none;">
+			<p style="display: none;" id="cmd_output">
+			</p>
+			<p>> <span id="cmd_input"></span><span class="cursor">_</span></p>
+		</div>
+	</div>
+	<div id="catch_click" style="display:none;"></div>
+
+	<link rel="stylesheet" type="text/css" href="css/my.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/my.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-49012942-3', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
