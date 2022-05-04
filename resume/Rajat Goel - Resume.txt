@@ -1,0 +1,75 @@
+Rajat Goel
+
++91-89883-50157
+
+
+  Software Engineer with 5+ years of experience.
+  Builds highly available and scalable applications across the Java stack.
+  Well-versed with RESTful microservices and event-driven architecture.
+  Solid understanding of databases and query optimization - MongoDB and MySQL
+
+
+PERSONAL INFORMATION
+  Address: , , 
+  Nationality: 
+  Driving License: 
+  Hobbies: 
+
+SOCIAL PROFILES
+  * linkedin.com/in/rajatgl17: linkedin.com/in/rajatgl17/
+  * github.com/rajatgl17: github.com/rajatgl17
+  * rajatgl17.github.io/blog: rajatgl17.github.io/blog/
+
+SKILLS
+  Java
+  Spring / Spring Boot
+  SQL
+  MongoDB
+  Apache Kafka
+  RabbitMQ
+  DynamoDB
+  Redis
+  Hibernate
+  Elasticsearch
+  AWS
+  Maven
+  Git
+  Docker
+  JUnit / Mockito
+  PlantUML
+
+WORK EXPERIENCE
+  * October 2020 – Present
+    Senior Software Engineer at Deutsche Telekom Digital Labs, Gurugram
+      
+  Producing coherent technical designs that meets product requirements.
+  Leading development of new features and enhancements related to home gateway management system.
+  Mentoring developers, and introducing best practices and processes to increase team efficiency.
+  Integrated Cujo services with next generation RDK based home gateways for enhanced capabilities.
+
+
+  * April 2019 – October 2020
+    Senior Software Engineer at OnGrid, Gurugram
+      
+  Redesigned and led the implementation of report generation module, making it scalable and faster.
+  Built a data pipeline using Debezium and Kafka, streaming data out of the monolith database.
+  Implemented Solr based criminal record check.
+  Piloted BPMN 2.0 (Activiti framework) based D-KYC solution.
+
+
+  * March 2017 – March 2019
+    Software Engineer at Azuga, Bengaluru
+      
+  Worked on data pipeline to enrich and distribute incoming live data to multiple sources and migrating existing old data (size in TBs) from MySQL to NoSQL-MongoDB.
+  Managed deployment, security, and monitoring of micro-services using API gateway - Kong.
+  Implemented authentication and authorization platform (based on Single-Sign-On and OAuth2).
+  Worked on multiple micro-services involved in IoT-based telematics solution - Fleet.
+
+
+
+EDUCATION
+  * August 2012 – May 2016
+    Rajasthan Technical University, Jaipur Bachelor of Technology
+  * April 2011 – March 2012
+    DAV Public School, Sirmaur, HP Higher Secondary
+
