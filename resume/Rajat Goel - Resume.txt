@@ -1,75 +1,59 @@
 Rajat Goel
-
 +91-89883-50157
+rajatgl17@gmail.com
+Sirmaur, India
+
+Summary:
+
+Software Engineer with 7+ years of experience in building data-intensive applications. Proven ability to tackle challenging architectural and scalability problems. Proficient in Java, Python, and SQL. Possess strong knowledge of RESTful microservices, data pipelines and data architecture.
+
+Professional Experience:
+
+Deutsche Telekom Digital Labs
+Senior Data Engineer, 04/2022 - Present
+
+• Leading a team of data engineers for developing and operationalizing (data) products/features (scale per day: ~ 12TB size, 2B records).
+• Developing and maintaining data warehousing solutions to support business intelligence and reporting.
+• Collaborating with cross-functional teams to design and implement data models and data architecture.
+• Optimizing and fine-tuning ETL processes to ensure data accuracy and consistency.
+
+Deutsche Telekom Digital Labs
+Senior Software Engineer, 10/2020 - 04/2022
+
+• Crafted coherent technical designs to meet product requirements.
+• Led development of new features and enhancements related to home gateway management system.
+• Mentored junior developers and introduced best practices & processes to improve code quality and enhance stability of application.
+
+OnGrid, Gurugram
+Senior Software Engineer, 04/2019 - 10/2020
+
+• Conceptualized and developed a new faster and scalable generic report generation module.
+• Built a data pipeline using Debezium and Kafka, streaming data out of the monolith database.
+• Implemented Solr/Lucene based automated criminal record check.
+
+Azuga, Bengaluru
+Software Engineer, 03/2017 - 03/2019
+
+• Worked on multiple micro-services involved in IoT-based telematics solution.
+• Implemented authentication and authorization platform based on Single-Sign-On and OAuth2.
+• Managed deployment, security, and monitoring of micro-services using API gateway - Kong.
 
 
-  Software Engineer with 5+ years of experience.
-  Builds highly available and scalable applications across the Java stack.
-  Well-versed with RESTful microservices and event-driven architecture.
-  Solid understanding of databases and query optimization - MongoDB and MySQL
+Skills:
+
+• Programming languages: Java, Python, SQL
+• Databases: MySQL, MongoDB, Redshift, DynamoDB
+• Frameworks & technologies: Spring, Spark, NiFi, Airflow, Hibernate/JPA, Kafka, RabbitMQ, Redis
+• Data warehousing, ETL and RESTful web services
+• Cloud-based technologies: AWS
 
 
-PERSONAL INFORMATION
-  Address: , , 
-  Nationality: 
-  Driving License: 
-  Hobbies: 
+Education:
 
-SOCIAL PROFILES
-  * linkedin.com/in/rajatgl17: linkedin.com/in/rajatgl17/
-  * github.com/rajatgl17: github.com/rajatgl17
-  * rajatgl17.github.io/blog: rajatgl17.github.io/blog/
+• Bachelor of Technology, Rajasthan Technical University, Jaipur, 2016
+• Higher Secondary, DAV Public School, Sirmaur, HP, 2012
 
-SKILLS
-  Java
-  Spring / Spring Boot
-  SQL
-  MongoDB
-  Apache Kafka
-  RabbitMQ
-  DynamoDB
-  Redis
-  Hibernate
-  Elasticsearch
-  AWS
-  Maven
-  Git
-  Docker
-  JUnit / Mockito
-  PlantUML
+Links:
 
-WORK EXPERIENCE
-  * October 2020 – Present
-    Senior Software Engineer at Deutsche Telekom Digital Labs, Gurugram
-      
-  Producing coherent technical designs that meets product requirements.
-  Leading development of new features and enhancements related to home gateway management system.
-  Mentoring developers, and introducing best practices and processes to increase team efficiency.
-  Integrated Cujo services with next generation RDK based home gateways for enhanced capabilities.
-
-
-  * April 2019 – October 2020
-    Senior Software Engineer at OnGrid, Gurugram
-      
-  Redesigned and led the implementation of report generation module, making it scalable and faster.
-  Built a data pipeline using Debezium and Kafka, streaming data out of the monolith database.
-  Implemented Solr based criminal record check.
-  Piloted BPMN 2.0 (Activiti framework) based D-KYC solution.
-
-
-  * March 2017 – March 2019
-    Software Engineer at Azuga, Bengaluru
-      
-  Worked on data pipeline to enrich and distribute incoming live data to multiple sources and migrating existing old data (size in TBs) from MySQL to NoSQL-MongoDB.
-  Managed deployment, security, and monitoring of micro-services using API gateway - Kong.
-  Implemented authentication and authorization platform (based on Single-Sign-On and OAuth2).
-  Worked on multiple micro-services involved in IoT-based telematics solution - Fleet.
-
-
-
-EDUCATION
-  * August 2012 – May 2016
-    Rajasthan Technical University, Jaipur Bachelor of Technology
-  * April 2011 – March 2012
-    DAV Public School, Sirmaur, HP Higher Secondary
-
+• https://github.com/rajatgl17
+• https://www.linkedin.com/in/rajatgl17
