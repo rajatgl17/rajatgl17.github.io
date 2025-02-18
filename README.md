@@ -1,4 +1,4 @@
-Link - http://rajatgl17.github.io/
+Link - https://rajatgl17.github.io/old_index.html
 
 I started developing this portfolio website under Freecodecamp's -'Build a Personal Portfolio Webpage' challenege.
 
